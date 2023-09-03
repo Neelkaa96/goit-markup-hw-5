@@ -1,4 +1,3 @@
-
 items* {
   padding: 0;
   margin: 0;
@@ -108,7 +107,7 @@ ul {
 .main-order-service {
   background-image: linear-gradient(var(--hero-background, rgba(46, 47, 66, 0.7)),
       var(--hero-background, rgba(46, 47, 66, 0.7))),
-    url(../images/picture/people-office.jpg);
+    url(../images/people-office.jpg);
   background-color: var(--dark, #2e2f42);
   background-size: cover;
   background-repeat: no-repeat;
@@ -157,9 +156,10 @@ ul {
   position: fixed;
   top: 80px;
   left: 50%;
-  transform: translateX(-50%);
+  right: 516px;
   width: 100%;
   height: 100%;
+  transform: translateX(-50%);
   background-color: rgba(46, 47, 66, 0.4);
   pointer-events: all;
   visibility: visible;
@@ -184,18 +184,17 @@ ul {
   height: 24px;
   border-radius: 50%;
   fill: var(--accent);
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 .modal-close-icon-items {
-  height: 24px;
-  width: 24px;
-  top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  height: 8px;
+  width: 8px;
+  fill: var(--modal-overlay);
 }
 
 .is-hidden {
@@ -361,6 +360,7 @@ nav {
 .main-team-media-items {
   width: 16px;
   height: 16px;
+  fill: var(--light);
 }
 
 .main-team-media-items:hover {
@@ -379,9 +379,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.icon-media-round svg{
-  fill: var(--light);
 }
 
 .icon-media-round:hover,
@@ -406,6 +403,7 @@ nav {
 .portfolio-image-wrapper {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .portfolio-image-wrapper:hover {
@@ -417,7 +415,7 @@ nav {
   translate: 0;
 }
 
-.portfolio-card-description {
+.portfolio-card-description  {
   color: var(--light);
   font-family: Roboto;
   font-size: 16px;
@@ -429,7 +427,6 @@ nav {
   position: absolute;
   inset: 0;
   background-color: var(--primary-brand);
-  color: #fff;
   translate: 0 100% 0;
   transition: translate 250ms;
 }
@@ -439,6 +436,7 @@ nav {
   padding: 32px 16px 32px 16px;
   transition: 250ms;
   transition-timing-function: var(--tr-function);
+  
 }
 
 .portfolio-image-card:hover,
@@ -569,6 +567,7 @@ nav {
   height: 24px;
   transition: 250ms;
   transition-timing-function: var(--tr-function);
+  fill: var(--light);
 }
 
 .footer-media-items:hover,
@@ -592,9 +591,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.icon-media-round-footer svg{
-  fill: var(--light);
 }
 
 .icon-media-round-footer:hover,

@@ -428,7 +428,7 @@ nav {
   position: absolute;
   inset: 0;
   background-color: var(--primary-brand);
-  translate: 0 100%;
+  translate: 0 100% 0;
   transition: translate 250ms;
 }
 

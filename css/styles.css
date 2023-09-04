@@ -239,6 +239,7 @@ nav {
   left: 0px;
   border-radius: 2px;
   position: absolute;
+  display: inline-block;
 }
 
 .address-link {
@@ -427,7 +428,7 @@ nav {
   position: absolute;
   inset: 0;
   background-color: var(--primary-brand);
-  translate: 0 100% 0;
+  translate: 0 100%;
   transition: translate 250ms;
 }
 
